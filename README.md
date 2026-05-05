@@ -69,11 +69,34 @@ A tool that encrypts and decrypts files and messages using industry-standard AES
 
 ---
 
+### 4. 🎣 Phishing Email Detector
+**File:** `phishing_detector.py`
+
+A threat detection tool that analyzes emails for phishing indicators and assigns a risk score based on multiple security checks.
+
+**Concepts Covered:**
+- Threat detection and analysis
+- Pattern matching and regex
+- Email security
+- Social engineering awareness
+
+**Features:**
+- Detects phishing keywords and urgency tactics
+- Identifies suspicious sender domains
+- Detects IP address URLs and URL shorteners
+- Flags generic greetings and suspicious subjects
+- Gives a risk score out of 100 with color coded results
+- Includes sample phishing and legitimate email tests
+
+---
+
 ## 🛠️ Technologies Used
 - Python 3
 - Socket Library (Networking)
 - Cryptography Library (AES Encryption)
 - Hashlib (SHA-256 Hashing)
+- Colorama (Colored Terminal Output)
+- Regex / Re Module (Pattern Matching)
 - OS & Random modules
 
 ---
@@ -86,9 +109,9 @@ git clone https://github.com/Manas121626/cybersecurity-projects.git
 cd cybersecurity-projects
 ```
 
-**Install required library:**
+**Install required libraries:**
 ```bash
-pip install cryptography
+pip install cryptography colorama
 ```
 
 **Run any project:**
@@ -96,6 +119,7 @@ pip install cryptography
 python "Password checker.py"
 python "port scanner.py"
 python file_encryption_tool.py
+python phishing_detector.py
 ```
 
 ---
@@ -109,6 +133,10 @@ python file_encryption_tool.py
 | SHA-256 Hashing | File Encryption Tool |
 | Network Reconnaissance | Port Scanner |
 | Key Derivation (PBKDF2) | File Encryption Tool |
+| Threat Detection | Phishing Detector |
+| Pattern Matching | Phishing Detector |
+| Email Security | Phishing Detector |
+| Social Engineering Awareness | Phishing Detector |
 
 ---
 
